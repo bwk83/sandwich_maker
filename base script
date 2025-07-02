@@ -1,0 +1,22 @@
+#make a sandwich including doc string
+def make_sandwich (bread_type, filling, cheese=None, toast=False):
+    """
+    makes a digital sandwich for the user.
+
+    Args:
+        bread_type: user's bread preference
+        filling: kind of sandwich being made
+        cheese: choice of cheese (optional). The default choice is none.
+        toasted: bread toaster or not (optional).  User default is false.
+    """
+    toast_text = "toasted " if toast else ""
+    sandwich = f"Making a {toast_text}{bread_type} sandwich with {filling}"
+    if cheese:
+        sandwich += f" and {cheese} cheese"
+    sandwich += "."
+    return sandwich
+sandwich1 = make_sandwich("wheat", "turkey", "cheddar", True)
+sandwich2 = make_sandwich("rye", "ham")
+
+print(sandwich1)
+print(sandwich2)  
