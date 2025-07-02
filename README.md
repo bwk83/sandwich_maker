@@ -1,1 +1,1 @@
-# sandwich_maker
+#this script demonstrates how multiple coding elements (classes, f strings, and conidtional statements) can be combined to make a program that will serve you a digital sandwich. A docstring is also included.
